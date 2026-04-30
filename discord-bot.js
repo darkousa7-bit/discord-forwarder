@@ -3,7 +3,7 @@ const https = require("https");
 
 // ─── CONFIG ───────────────────────────────────────────────
 const BOT_TOKEN    = process.env.DISCORD_BOT_TOKEN;
-const CHANNEL_ID   = "1379039190024589472";
+const CHANNEL_ID   = "1428290261288489085";
 const N8N_WEBHOOK  = "https://n8n.b-pro.uk/webhook/discord-forward";
 // ──────────────────────────────────────────────────────────
 
