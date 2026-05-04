@@ -22,7 +22,6 @@ client.once("ready", () => {
 
 client.on("messageCreate", (message) => {
   if (message.author.bot) return;
-
   const webhookUrl = CHANNELS[message.channelId];
   if (!webhookUrl) return;
 
@@ -48,7 +47,7 @@ client.on("messageCreate", (message) => {
   };
 
   const req = https.request(options, (res) => {
-    console.log(`📤 Forwarded [${message.channelId}] from ${message.author.username} — status: ${res.statusCode}`);
+    console.log(`📤 [${message.channelId}] from ${message.author.username} — status: ${res.statusCode}`);
   });
 
   req.on("error", (err) => console.error("❌ Webhook error:", err.message));
